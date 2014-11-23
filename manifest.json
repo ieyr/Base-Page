@@ -12,14 +12,8 @@
   },
   "commands": {
     "toggle-feature": {
-      "suggested_key": { "default": "MacCtrl+Shift+Y" },
+      "suggested_key": { "default": "Ctrl+B" },
       "description": "Send a 'toggle-feature' event to the extension"
-    },
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+B"
-      }
     }
   }
 }
