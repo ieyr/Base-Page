@@ -13,15 +13,9 @@ chrome.commands.onCommand.addListener(function(command) {
 	    myURL = tabs[0].url;
 	    
 	    newurl = myURL.substring(0,myURL.indexOf(".com")+4);
-	    alert(newurl);
 	    chrome.tabs.update({url: newurl});
 	});
   	
 });
 
 
-
-function getNewUrl(oldurl){
-	newurl = myURL.substring(0,myURL.indexOf(".com")+4);
-	//alert(newurl)
-}
