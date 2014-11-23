@@ -15,5 +15,6 @@
       "suggested_key": { "default": "Ctrl+B" },
       "description": "Send a 'toggle-feature' event to the extension"
     }
-  }
+  },
+  "permissions": ["tabs"]
 }
