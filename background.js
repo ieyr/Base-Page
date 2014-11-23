@@ -5,10 +5,11 @@
 chrome.commands.onCommand.addListener(function(command) {
   console.log('onCommand event received for message: ', command);
   alert("gotpewevent");
-  redirect();
+  chrome.tabs.update({url: "http://google.com"});
    alert("redirected to y");
 });
 
 function redirect(){
 	window.location.href = 'www.google.com';
 }
+//chrome.extension.sendRequest({redirect: "http://google.com"});
