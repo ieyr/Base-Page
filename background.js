@@ -13,7 +13,10 @@ chrome.commands.onCommand.addListener(function(command) {
 	    myURL = tabs[0].url;
 	    
 	    newurl = myURL.substring(0,myURL.indexOf(".com")+4);
-	    chrome.tabs.update({url: newurl});
+	    //alert(myURL.indexOf(".com")+4);
+	    //if(!myURL.indexOf(".com")+4 == -1){ //attempt to stop it from not working outside of .com domains
+	    	chrome.tabs.update({url: newurl});
+	    //}
 	});
   	
 });
