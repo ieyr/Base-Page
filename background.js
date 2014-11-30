@@ -13,7 +13,9 @@ chrome.commands.onCommand.addListener(function(command) {
 	    myURL = tabs[0].url;
 	    //alert(Mod.getPublicSuffix(myURL));
 	    alert(myURL);
-	    var mysuffix = window.publicSuffixList.getPublicSuffix(myURL);
+	    var mysuffix = String("");
+	    mysuffix = window.publicSuffixList.getPublicSuffix(myURL);
+	    if((window.publicSuffixList.getPublicSuffix(myURL)).length()>0)
 	    mysuffix = mysuffix.substring(0, mysuffix.indexOf("/"));
 	    mysuffix = "." + mysuffix;
 	    alert(mysuffix);
